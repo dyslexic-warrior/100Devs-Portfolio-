@@ -1,0 +1,39 @@
+/*ignor the border*/
+*{
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: gray;
+    width: 99.9999%;
+    height: 300px;
+    margin: 0px;
+    border: solid 1px black;
+    clear: both ;
+}
+p {
+    background-color: gray;
+    height: 600px;
+    margin: 0px;
+    border: solid 1px black;
+    clear: both ;
+}
+.one {
+    width: 19.9999%;
+    float: left;
+    
+}
+.two {
+    width: 39.9999%;
+    float: left;
+    
+}
+.three {
+    width: 19.9999%;
+    float: left;
+    
+}
+.four {
+    width: 19.9999%;
+    float: left;
+    
+}

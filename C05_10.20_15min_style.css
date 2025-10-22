@@ -1,0 +1,22 @@
+/*ignor the border*/
+*{
+    box-sizing: border-box;
+}
+section h1, h5 {
+    height: 200px;
+    width: 99.9999%;
+    margin: 0;
+    background-color: gray;
+    border: solid 1px black ;
+    clear: both;
+}
+section h2,h3, h4 {
+    height: 400px;
+    width: 33.3333%;
+    margin: 0;
+    background-color: gray;
+    border: solid 1px black ;
+    float: left;
+    
+}
+

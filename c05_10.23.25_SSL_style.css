@@ -1,0 +1,60 @@
+
+/*ignor the border*/
+*{
+    box-sizing: border-box;
+}
+/*page background*/
+body {
+    background-color: skyblue;
+    border: solid 6px lime;
+    margin: 20px 20px 20px 20px; 
+}
+/*letters color*/
+h1, h2, p, td{
+    color:white;
+    
+}
+/*image*/
+img {
+    height: 350px;
+    width: 250px;
+    margin: -500px 50px 500px 350px ;
+    display: block;
+    border-radius: 8px;
+    float: left;
+    
+    
+}
+/*position*/
+h1 {
+    text-align: center;
+    font-size: 39px;
+    height:  100px;
+}
+
+
+section {
+    height: 100%;
+    
+    margin: 25px;
+    
+}
+ nav{
+   display: inline-block;
+    padding: 50px;
+    position: center;
+    width: 450px;
+    height: 25px;
+    margin-left: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.green-li {
+    color: green;
+    margin: 50px ;
+    text-decoration: underline;
+    
+}
+p {
+line-height: 30px;
+}

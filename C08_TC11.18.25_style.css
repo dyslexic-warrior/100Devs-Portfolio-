@@ -1,0 +1,173 @@
+/* Box Model Hack */
+* { box-sizing: border-box; }
+
+/* Clearfix */
+.clearfix:after {
+    /* Use the modern clearfix pattern: invisible empty content and table display */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top bar (Extra Crunch, Join, Login) */
+.top-bar {
+    background: #fff;
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.top-bar .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+.top-bar a {
+    color: #000;
+    text-decoration: none;
+}
+.extra-crunch { margin-right: auto; font-weight: 700; }
+
+/* Main navigation */
+.main-nav {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.main-nav .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.main-nav .logo img { height: 32px; }
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover { color: #ff6600; }
+
+.search input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Main layout */
+.main-content {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+    align-items: flex-start; /* ensure sidebar/top of hero align */
+    flex-wrap: wrap; /* allow content to wrap on narrow widths */
+}
+
+/* Hero section */
+.hero {
+    flex: 2;
+    position: relative;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* remove inline image whitespace and improve layout flow */
+}
+.hero-text {
+    margin-top: 20px;
+}
+.hero h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 12px 0;
+}
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.author {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.latest-stories {
+    list-style: none;
+    padding: 0;
+}
+.latest-stories li {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.latest-stories article h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+}
+.latest-stories .author {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Bottom story */
+.bottom-story {
+    background: #f8f8f8;
+    padding: 40px 0;
+}
+.bottom-story h2 {
+    font-size: 36px;
+    margin: 0 0 15px 0;
+}
+.bottom-story .meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.bottom-story img {
+    float: right;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-content { flex-direction: column; }
+    .hero h1 { font-size: 36px; }
+    .search input { width: 100%; max-width: 320px; }
+}

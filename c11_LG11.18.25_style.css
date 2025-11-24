@@ -1,0 +1,97 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: rgb(81, 117, 184);
+  width: 99.9999%;
+  height: 66px;
+  border: 3px solid  rgb(81, 117, 184) ;
+  color: white;
+  text-align: center;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 99px;
+}
+
+nav li {
+  padding: 20px;
+}
+main {
+  background-color: rgb(81, 117, 184);
+  width: 99.9999%;
+  height: 297px;
+  border: 3px solid rgb(81, 117, 184) ;
+  color: white;
+  text-align: center;
+  padding: 0 199px;
+}
+.sone {
+  background-color: white;
+  width: 99.9999%;
+  height: 297px;
+  border: 3px solid white;
+  color: darkblue;
+  text-align: center;
+  padding: 0 199px;
+}
+.stwo {
+  background-color: rgb(189, 216, 237);
+  width: 99.9999%;
+  height: 555px;
+  border: 3px solid rgb(189, 216, 237);
+  color: darkblue;
+  text-align: center;
+  padding: 0 199px;
+}
+footer {
+background-color: rgb(10, 23, 47);
+  width: 99.9999%;
+  height: 198px;
+  border: 3px solid rgb(10, 23, 47) ;
+  color: white;
+  text-align: left;
+  padding: 0 199px;
+}
+.doublesec {
+  display: flex;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
